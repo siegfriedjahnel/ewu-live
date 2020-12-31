@@ -1,0 +1,21 @@
+{
+    "short_name": "EWU-LIVE",
+    "name": "EWU-Turnier-App for Browsers",
+    "icons": [
+      {
+        "src": "icons/icon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "icons/icon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "index.html",
+    "background_color": "#FFB74D",
+    "display": "standalone",
+    "theme_color": "#FFB74D"
+  }
+  

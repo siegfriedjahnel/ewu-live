@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EWU-Web-App-2021</title>
+  <meta name="author" content="SJ">
+  <meta name="description" content="description here">
+  <meta name="keywords" content="EWU web-App 2020">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="icons/favicon.png">
+  <link rel="stylesheet" href="styles/styles.css" type="text/css">
+  <script src="lib/qrcode.min.js"></script>
+</head>
+
+<body>
+  <div class="appcontainer">
+    <div class="head">
+      <span class="icon"><img src="icons/icon-64.png" alt="icon" width="32" height="32"></span>
+      <span class="text">
+        <h2>EWU Live</h2>
+      </span>
+      <span class="icon" id="btnToggleMenu"><img src="icons/menu-64.png" alt="icon"  width="32" height="32"></span>
+    </div>
+    <div class="menu" id="menu">
+      <p id="btnCloseMe">X</p>
+      <ul>
+        <li><button onclick="showQR()"  class= "linkButton">Share by QR</button></li>
+        <li><button onclick="sendToWhatsapp()"  class= "linkButton">Share by Whatsapp</button></li>
+        <li><button onclick="showAppInfo()" class="linkButton">App Info</button></li>
+
+      </ul>
+    </div>
+    <div class="card titel">
+      <span id="contentTitel"></span>
+    </div>
+    <div class="content" id="content"></div>
+
+    <button class="fab" id="fab"> <<< </button>
+  </div>
+</body>
+
+<script type="text/javascript" src="src/index.js"></script>
+
+</html>

@@ -1,0 +1,124 @@
+:root {
+    --main-bg-color:#FF9800;
+    --main-bg-color-mod:#FFB74D;
+    --main-txt-color: #111111;
+    --error-color: #B00020;
+    
+  }
+
+
+body{
+    font-family: sans-serif;
+    font-size: small;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+
+}
+.linkButton{
+    padding: 4pt;
+    margin:4pt;
+    border-radius: 16pt;
+    border: none;
+    /* border-color: #B00020; */
+    background-color: var(--main-bg-color);
+    box-shadow: none;
+
+}
+#qrcode {
+  /* margin-top: 10%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loadergGif{
+    height: 64pt;
+    width: 64pt;
+    margin-left: 40%;
+    margin-top: 40%;
+}
+.icon{
+    padding: 8pt;
+}
+.appcontainer{
+    
+    display:flex;
+    flex-direction: column;
+}
+#btnCloseMe{
+    padding-right: 12px;
+    font-size: 24px;
+    background-color: #111111;
+    text-align: right;
+}
+.head{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: var(--main-bg-color-mod);
+    
+    border-radius: 2pt;
+    border-color: var(--main-txt-color-mod);
+}
+.text{
+    margin-left: 8pt;
+}
+.menu{
+    position:fixed;
+	width:240px;
+	visibility: hidden;
+	top:100px;
+    right:20px;
+    background-color: #FFF;
+	/* background-color: var(--main-bg-color-mod); */
+	color:#FFF;
+	border-radius:5px;
+    border:none;
+    opacity: 0.95;
+    font-size: 12pt;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 8px;;
+}
+.content{
+    margin-top: 2pt;
+    padding: 2pt;
+}
+.card{
+    margin: 4pt;
+    padding: 4pt;
+   
+    background-color:var(--main-bg-color-mod);
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 4pt;
+    transition: 0.3s;
+  }
+  .card.titel{
+      margin: 2pt;
+      margin-top: 4pt;
+      padding: 12pt;
+      font-weight: bolder;
+      font-size: medium;
+  }
+  
+  .fab{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#E65100;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    border:none;
+    opacity: 0.8;
+    font-size:20pt;
+  
+
+}

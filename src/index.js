@@ -111,8 +111,8 @@ async function getTurnierListe(what) {
     try{
         content.innerHTML = `<img class="loadingGif" src="images/loading.gif">`;
         content.innerHTML = loaderGif;
-        //let response = await fetch(`${apiProxy}?a=${what}`);
-        let response = await fetch("Aktuell.json");//for testing
+        let response = await fetch(`${apiProxy}?a=${what}`);
+        //let response = await fetch("Aktuell.json");//for testing
         let myJson = await response.json();
         let turnierListe = myJson.turnierLightList;
         turnierListe.sort(function (a, b) { return b.anfang.localeCompare(a.anfang) });
